@@ -47,7 +47,7 @@ void insert()
         printf("\nOVERFLOW\n");  
         return;  
     }  
-    if(front == -1 && rear == max)  
+    if(front == -1 && rear == -1)  
     {  
         front = 0;  
         rear = 0;  
@@ -95,7 +95,7 @@ void display()
         printf("\nEmpty queue\n");  
     }  
     else  
-    {   printf("\nprinting values .....\n");  
+    {   printf("\n values are\n");  
         for(i=front;i<=rear;i++)  
         {  
             printf("\n%d\n",queue[i]);  
