@@ -1,0 +1,44 @@
+#include <stdio.h>
+int bublsort();
+int a[10],i,j,num,temp;
+
+int main() {
+printf(" enter number of elements : ");
+scanf("%d",&num);
+
+for(i=0;i<=num;i++)
+{
+    printf("enter values of array : ");
+scanf("%d",&a[i]);
+}
+printf("unsorted array");
+for(i=0;i<=num;i++)
+{
+    printf("%d\n",a[i]);
+}
+bublsort();
+printf("sorted array\n");
+for(i=0;i<=num;i++)
+{
+    printf("%d\n",a[i]);
+}
+    return 0;
+}
+
+
+int bublsort()
+{
+    for (i=0; i<=num-1; i++)
+    {
+    for(j=i+1;j<=num-1;j++)
+    {
+        if(a[i]>a[j])
+        {
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+        
+    }
+}
+}
